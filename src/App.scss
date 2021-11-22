@@ -34,9 +34,8 @@ $border : .2rem solid $black;
 
 .btn-join{
     display: inline-block;
-    margin-top: 1rem;
-    padding: 1rem 3rem;
-    font-size: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
     color: $white;
     background: $black;
     border: $border;
@@ -79,4 +78,64 @@ $border : .2rem solid $black;
     }
     
 
+}
+
+.menu-btn{
+    cursor: pointer;
+    font-size: 3rem;
+    display: none;
+   
+    div{
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 6px 0;
+    }
+}
+@media (max-width:991px) {
+    
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:768px) {
+    
+    .menu-btn{
+    
+        display: inline-block;
+    }
+    .header{
+        .btn-join{
+            display: none;
+        }
+        .navbar{
+            position: absolute;
+            top: 99%;
+            left: 0;
+            right: 0;
+            border: $border;
+            background: $white;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            transition: .3s linear;
+
+            &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+            a{
+                display: block;
+                margin: 0;
+                padding: 1.5rem 2rem;
+            }
+        }    
+    }
+}
+@media (max-width:450 px) {
+    
+    html{
+        font-size: 50%;
+    }
+}
+
+.test{
+    height: 1000px;
 }

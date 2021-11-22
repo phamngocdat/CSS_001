@@ -1,9 +1,16 @@
 
 import './App.scss';
-
+import homeImg from './images/home-img.svg';
 
 
 function App() {
+let navbar= document.querySelector('.header .navbar');
+let menu = document.querySelector('.menu-btn');
+
+menu.onclick = () => {
+  navbar.classList.toggle('active');
+}
+
   return (
     <div className="app">
       <header className="header">
@@ -17,8 +24,20 @@ function App() {
               <a href="#home" > FAQ </a>       
               
           </nav>
+          <div className="menu-btn"> 
+              <div></div>
+              <div></div>
+              <div></div>
+           </div>
           <a href="1" className="btn-join"> join us </a>
       </header>
+      <section className="home">
+          <div className="image">
+            <img src={homeImg} alt="home-img"></img>
+          </div>
+      </section>
+      
+      <div className="test"></div>
     </div>
   );
 }
