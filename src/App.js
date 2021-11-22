@@ -15,8 +15,7 @@ function App() {
               <a href="#features" > features </a>
               <a href="#pricing" > pricing </a>
               <a href="#home" > FAQ </a>       
-              <a href="#home" > FAQ </a>               
-              <a href="#home" > FAQ </a>
+              
           </nav>
           <a href="1" className="btn-join"> join us </a>
       </header>
