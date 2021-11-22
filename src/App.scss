@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+$black: #000;
+$white: #fff;
+$blue: #cae8e3;
+$yellow : #ffd080;
+$border : .2rem solid $black;
+
+.app{
+    font-size: 65.5%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem ;
+
+    &::-webkit-scrollbar{
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-track{
+        background: $white;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: $black;
+    }
+}
+
+.btn-join{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: $white;
+    background: $black;
+    border: $border;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: .5rem;
+
+    &:hover{
+        background:none;
+        color: $black;
+    }
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background : $white;
+    box-shadow: 0 .5rem 1rem black;
+    padding: 2rem 9% ;
+
+    .logo{
+        font-size: 2rem;
+        color: $black;
+    }
+
+    .navbar a{
+        margin: 0 1rem;
+        font-size: 2rem;
+        color: $black;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+
+}
